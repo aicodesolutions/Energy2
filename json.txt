@@ -1,0 +1,118 @@
+Available energy plans : [{
+  "planName": "Fixed Energy Charge Plan",
+  "description": "Energy rate stays the same regardless of time of day or day of week",
+  "whyChoose": [
+    "Don't use a lot of energy",
+    "Have a small to average sized home",
+    "Prefer not to worry about time or day of energy use"
+  ],
+  "benefits": [
+    "Flexibility to use energy at any time",
+    "Potential to save money by reducing energy use or improving efficiency"
+  ],
+  "waysToSave": [
+    "Decrease overall energy use",
+    "Improve energy efficiency",
+    "Switch to LED light bulbs",
+    "Adjust thermostat settings"
+  ],
+  "planDetails": {
+    "rateStructure": "Same rate year-round based on assigned usage tier",
+    "usageTiers": [
+      {
+        "tier": 1,
+        "usageRange": "600 kWh or less",
+        "rate": "12.925¢/kWh"
+      },
+      {
+        "tier": 2,
+        "usageRange": "601-999 kWh",
+        "rate": "14.052¢/kWh"
+      },
+      {
+        "tier": 3,
+        "usageRange": "1,000 kWh or more",
+        "rate": "15.418¢/kWh"
+      }
+    ]
+  }
+},
+{
+  "planName": "Time-of-Use 4pm-7pm Weekdays with Demand Charge",
+  "description": "Energy rate based on time of day and day of week, with monthly demand charge for highest hour of usage during on-peak hours",
+  "whyChoose": [
+    "Use a lot of energy and can benefit from lower energy rate",
+    "Have average to larger sized home",
+    "Willing to adjust energy use and manage demand during on-peak hours"
+  ],
+  "benefits": [
+    "Potential to save money by shifting energy use to off-peak hours",
+    "Ability to manage energy demand during on-peak hours"
+  ],
+  "waysToSave": [
+    "Shift energy use to off-peak hours",
+    "Stagger use of major appliances during on-peak hours",
+    "Use delay settings on appliances",
+    "Pre-cool or pre-heat home during off-peak hours"
+  ],
+  "planDetails": {
+    "rateStructure": "Time-of-use with demand charge",
+    "onPeakHours": "4pm-7pm weekdays",
+    "offPeakHours": "all other hours",
+    "superOffPeakHours": "10am-3pm weekdays (winter months)",
+    "demandCharge": "monthly demand charge for highest hour of usage during on-peak hours",
+    "demandLimiter": "automatically lowers demand charge for rare, unusual spikes in usage during on-peak hours"
+  },
+  "rates": {
+    "summer": {
+      "onPeak": "higher rate",
+      "offPeak": "lower rate"
+    },
+    "winter": {
+      "onPeak": "higher rate",
+      "offPeak": "lower rate",
+      "superOffPeak": "lowest rate"
+    }
+  },
+  "demandChargeCredit": {
+    "available": "once during any 12-month period",
+    "calculation": "based on difference between current kW and kW from same billing period last year"
+  }
+},
+{
+  "planName": "Time-of-Use 4pm-7pm Weekdays",
+  "description": "Energy rate based on time of day and day of week, with higher rates during on-peak hours",
+  "whyChoose": [
+    "Can use less energy during higher-cost on-peak hours",
+    "Have average to larger sized home",
+    "Willing to adjust energy use to save"
+  ],
+  "benefits": [
+    "Potential to save money by shifting energy use to off-peak hours",
+    "Ability to manage energy costs by using less energy during on-peak hours"
+  ],
+  "waysToSave": [
+    "Shift use of major appliances to off-peak hours",
+    "Use less energy during on-peak hours",
+    "Use delay settings on appliances",
+    "Adjust pool pump timer"
+  ],
+  "planDetails": {
+    "rateStructure": "Time-of-use",
+    "onPeakHours": "4pm-7pm weekdays",
+    "offPeakHours": "all other hours",
+    "superOffPeakHours": "10am-3pm weekdays (winter months)",
+    "holidays": "lower off-peak energy rates on weekends and holidays"
+  },
+  "rates": {
+    "summer": {
+      "onPeak": "higher rate",
+      "offPeak": "lower rate"
+    },
+    "winter": {
+      "onPeak": "higher rate",
+      "offPeak": "lower rate",
+      "superOffPeak": "lowest rate"
+    }
+  }
+}]
